@@ -30,6 +30,11 @@ namespace Fallout.Models.DataManager
                 .FirstOrDefault(e => e.ID == id);
         }
 
+        public Settlement GetByName(string name) {
+            return _settlementContext.Settlements
+                .FirstOrDefault(e => e.Name == name);
+        }
+
         public IEnumerable<Settlement> GetAll()
         {
             return _settlementContext.Settlements.ToList();

@@ -27,10 +27,23 @@ namespace Fallout.Controllers
             return Ok(settlements);
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{id:long}")]
         public IActionResult Get(long id)
         {
             Settlement settlement = _dataRepository.Get(id);
+
+            if (settlement == null)
+            {
+                return NotFound("Settlement record could not be found");
+            }
+
+            return Ok(settlement);
+        }
+
+        [HttpGet("{name}")]
+        public IActionResult Get(string name)
+        {
+            Settlement settlement = _dataRepository.GetByName(name);
 
             if (settlement == null)
             {

@@ -14,6 +14,7 @@ namespace Fallout.Repository
     {
         IEnumerable<TEntity> GetAll();
         TEntity Get(long id);
+        TEntity GetByName(string name);
         void Add(TEntity entity);
         void Update(TEntity repoEntity, TEntity entity);
         void Delete(TEntity entity);

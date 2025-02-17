@@ -40,6 +40,10 @@ namespace Fallout.Models.DataManager
                 .FirstOrDefault(e => e.ID == id);
         }
 
+        public Employee GetByName(string name) {
+            return null;
+        }
+
         public IEnumerable<Employee> GetAll()
         {
             return _employeeContext.Employees.ToList();
