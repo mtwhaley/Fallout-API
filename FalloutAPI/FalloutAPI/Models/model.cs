@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 /*------------------------------------------------
                 Enity Models
@@ -11,6 +12,16 @@ database and all layers expect to see.
 namespace Fallout.Models
 {
     //Data Model to match the database
+
+    public class SettlementContext: DbContext
+    {
+        public SettlementContext(DbContextOptions<SettlementContext> options)
+            : base(options)
+        { }
+
+        public DbSet<Settlement> Settlements { get; set; }
+    }
+
     public class EmployeeContext: DbContext
     {
         public EmployeeContext(DbContextOptions<EmployeeContext> options)
@@ -18,6 +29,20 @@ namespace Fallout.Models
         { }
 
         public DbSet<Employee> Employees { get; set; }
+    }
+
+    public class Settlement
+    {
+        public long ID {get; set;}
+        public string Name {get; set;}
+        [Column("numSettlers")]
+        public int? NumSettlers {get; set;}
+        public bool? Walls {get; set;}
+        public bool? Defenses {get; set;}
+        public bool? Armored {get; set;}
+        public bool? Weaponized {get; set;}
+        public string Area {get; set;}
+        public bool? Full {get; set;}
     }
 
     public class Employee 

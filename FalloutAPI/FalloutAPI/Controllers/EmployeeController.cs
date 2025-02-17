@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Threading.Tasks;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using Fallout.Models;
 using Fallout.Repository;
-using Fallout.Models.DataManager;
 using System.Collections.Generic;
 
 /*--------------------------------------------------

@@ -15,7 +15,7 @@ namespace Fallout.Repository
         IEnumerable<TEntity> GetAll();
         TEntity Get(long id);
         void Add(TEntity entity);
-        void Update(Employee employee, TEntity entity);
-        void Delete(Employee employee);
+        void Update(TEntity repoEntity, TEntity entity);
+        void Delete(TEntity entity);
     }
 }

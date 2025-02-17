@@ -52,6 +52,13 @@ namespace Fallout
 
             //Setup Repository
             services.AddScoped<IDataRepository<Employee>, EmployeeManager>();
+
+
+            services.AddDbContext<SettlementContext>(options => 
+                options.UseMySql(Configuration.GetConnectionString("FalloutConnection"), new MySqlServerVersion(new Version(8,0,30)))
+                
+            );
+            services.AddScoped<IDataRepository<Settlement>, SettlementManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
