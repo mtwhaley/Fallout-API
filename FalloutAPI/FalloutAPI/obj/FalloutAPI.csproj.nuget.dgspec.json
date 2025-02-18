@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\17023\\Desktop\\C#\\Fallout API\\FalloutAPI\\FalloutAPI\\FalloutAPI.csproj": {}
+    "c:\\Users\\17023\\Desktop\\Full-Stack\\Fallout\\Fallout-API\\FalloutAPI\\FalloutAPI\\FalloutAPI.csproj": {}
   },
   "projects": {
-    "c:\\Users\\17023\\Desktop\\C#\\Fallout API\\FalloutAPI\\FalloutAPI\\FalloutAPI.csproj": {
+    "c:\\Users\\17023\\Desktop\\Full-Stack\\Fallout\\Fallout-API\\FalloutAPI\\FalloutAPI\\FalloutAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\17023\\Desktop\\C#\\Fallout API\\FalloutAPI\\FalloutAPI\\FalloutAPI.csproj",
+        "projectUniqueName": "c:\\Users\\17023\\Desktop\\Full-Stack\\Fallout\\Fallout-API\\FalloutAPI\\FalloutAPI\\FalloutAPI.csproj",
         "projectName": "FalloutAPI",
-        "projectPath": "c:\\Users\\17023\\Desktop\\C#\\Fallout API\\FalloutAPI\\FalloutAPI\\FalloutAPI.csproj",
+        "projectPath": "c:\\Users\\17023\\Desktop\\Full-Stack\\Fallout\\Fallout-API\\FalloutAPI\\FalloutAPI\\FalloutAPI.csproj",
         "packagesPath": "C:\\Users\\17023\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\17023\\Desktop\\C#\\Fallout API\\FalloutAPI\\FalloutAPI\\obj\\",
+        "outputPath": "c:\\Users\\17023\\Desktop\\Full-Stack\\Fallout\\Fallout-API\\FalloutAPI\\FalloutAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\17023\\AppData\\Roaming\\NuGet\\NuGet.Config"

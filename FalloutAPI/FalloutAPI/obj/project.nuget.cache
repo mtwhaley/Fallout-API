@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W+iIuSj1YFA=",
+  "dgSpecHash": "q9b1bhsaKSE=",
   "success": true,
-  "projectFilePath": "c:\\Users\\17023\\Desktop\\C#\\Fallout API\\FalloutAPI\\FalloutAPI\\FalloutAPI.csproj",
+  "projectFilePath": "c:\\Users\\17023\\Desktop\\Full-Stack\\Fallout\\Fallout-API\\FalloutAPI\\FalloutAPI\\FalloutAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\17023\\.nuget\\packages\\entityframework\\6.2.0\\entityframework.6.2.0.nupkg.sha512",
     "C:\\Users\\17023\\.nuget\\packages\\google.protobuf\\3.5.1\\google.protobuf.3.5.1.nupkg.sha512",
