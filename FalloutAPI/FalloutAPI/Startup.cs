@@ -32,6 +32,10 @@ namespace Fallout
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors((options)=>{
+                options.AddPolicy("AllowReactApp", policy=>policy.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod());
+            });
+
             //Adds an intercept filter to the Rest Api
             services
                 .AddControllers( options =>
@@ -72,6 +76,8 @@ namespace Fallout
             {
                 app.UseHsts();
             }
+
+            app.UseCors("AllowReactApp");
 
             app.UseHttpsRedirection();
             app.UseRouting();
