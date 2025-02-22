@@ -5,10 +5,10 @@ using Microsoft.Extensions.DependencyInjection;
 using FalloutAPI.Filters;
 using FalloutAPI.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
 using FalloutAPI.Repository;
 using FalloutAPI.Models.DataManager;
 using System;
+using FalloutAPI.Services;
 /*------------------------------------------------
  *              Startup Configurations
  * This is where all the services such as Database,
@@ -48,21 +48,18 @@ namespace FalloutAPI
             services.AddRouting(options => options.LowercaseUrls = true);
 
             //Set up the database connection
-            services.AddDbContext<EmployeeContext>(options => 
-                options.UseMySql(Configuration.GetConnectionString("DefaultConnection"),  new MySqlServerVersion(new Version(8, 0, 30)))
-                .EnableSensitiveDataLogging()
-                .LogTo(Console.WriteLine, LogLevel.Information)); // This will log SQL queries to the console
             
-
-            //Setup Repository
+            services.AddMySqlDbContext<EmployeeContext> (Configuration, "LlcConnection");
+            
+            services.AddMySqlDbContext<SettlementContext> (Configuration, "FalloutConnection");
+            
+            services.AddMySqlDbContext<AreaContext> (Configuration, "FalloutConnection");
+            
             services.AddScoped<IDataRepository<Employee>, EmployeeManager>();
 
-
-            services.AddDbContext<SettlementContext>(options => 
-                options.UseMySql(Configuration.GetConnectionString("FalloutConnection"), new MySqlServerVersion(new Version(8,0,30)))
-                
-            );
             services.AddScoped<IDataRepository<Settlement>, SettlementManager>();
+
+            services.AddScoped<IDataRepository<Area>, AreaManager>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -86,5 +83,6 @@ namespace FalloutAPI
                 endpoints.MapControllers();
             });
         }
+
     }
 }
