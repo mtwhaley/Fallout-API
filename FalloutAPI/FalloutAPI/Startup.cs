@@ -2,12 +2,12 @@
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Fallout.Filters;
-using Fallout.Models;
+using FalloutAPI.Filters;
+using FalloutAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
-using Fallout.Repository;
-using Fallout.Models.DataManager;
+using FalloutAPI.Repository;
+using FalloutAPI.Models.DataManager;
 using System;
 /*------------------------------------------------
  *              Startup Configurations
@@ -18,7 +18,7 @@ using System;
 -------------------------------------------------*/
 
 
-namespace Fallout
+namespace FalloutAPI
 {
     public class Startup
     {

@@ -2,11 +2,11 @@
 
 
 using System.Collections.Generic;
-using Fallout.Models;
-using Fallout.Repository;
+using FalloutAPI.Models;
+using FalloutAPI.Repository;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Fallout.Controllers
+namespace FalloutAPI.Controllers
 {
     [Route("/[controller]")]
     [ApiController]

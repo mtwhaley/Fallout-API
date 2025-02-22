@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Linq;
 using System.Collections.Generic;
-using Fallout.Repository;
-using Fallout.Models;
+using FalloutAPI.Repository;
+using FalloutAPI.Models;
 
 /*---------------------------------------------------
                 Employee Repository
@@ -12,7 +12,7 @@ using Fallout.Models;
  the Entity Framework objects defined in the model.
 --------------------------------------------------*/
 
-namespace Fallout.Models.DataManager
+namespace FalloutAPI.Models.DataManager
 {
     public class EmployeeManager : IDataRepository<Employee>
     {

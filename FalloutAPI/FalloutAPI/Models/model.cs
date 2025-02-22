@@ -9,7 +9,7 @@ is defined. This is the model of the data that the
 database and all layers expect to see.
 ------------------------------------------------*/
 
-namespace Fallout.Models
+namespace FalloutAPI.Models
 {
     //Data Model to match the database
 

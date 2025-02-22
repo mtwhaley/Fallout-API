@@ -1,4 +1,4 @@
-﻿using Fallout.Models;
+﻿using FalloutAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System;
@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 Filers out Api errors and return a Json object with an explicit 
 error and a stack trace
 -------------------------------------------------------------*/
-namespace Fallout.Filters
+namespace FalloutAPI.Filters
 {
     public class JsonExceptionFilter : IExceptionFilter
     {

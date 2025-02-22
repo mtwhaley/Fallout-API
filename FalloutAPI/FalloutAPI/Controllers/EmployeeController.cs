@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
-using Fallout.Models;
-using Fallout.Repository;
+using FalloutAPI.Models;
+using FalloutAPI.Repository;
 using System.Collections.Generic;
 
 /*--------------------------------------------------
@@ -16,7 +16,7 @@ This help when one might want to change databases, or data
 from the database is supplemented from somewhere else.
 ---------------------------------------------------*/
 
-namespace Fallout.Controllers
+namespace FalloutAPI.Controllers
 {
     [Route("/[controller]")]
     [ApiController]

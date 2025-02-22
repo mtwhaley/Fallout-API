@@ -10,7 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 //Main Entry Point into the application
-namespace Fallout
+namespace FalloutAPI
 {
     public class Program
     {

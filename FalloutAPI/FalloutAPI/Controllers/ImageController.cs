@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.IO;
 
-namespace Fallout.Controllers
+namespace FalloutAPI.Controllers
 {
     [Route("/[controller]")]
     [ApiController]

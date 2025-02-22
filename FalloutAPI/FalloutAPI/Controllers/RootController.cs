@@ -4,7 +4,7 @@ using System.Collections;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Fallout.Controllers
+namespace FalloutAPI.Controllers
 {
     [Route("/test")]
     [ApiController]

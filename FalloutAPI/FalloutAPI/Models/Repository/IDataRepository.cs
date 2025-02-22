@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Fallout.Models;
+using FalloutAPI.Models;
 
 /*---------------------------------------------
  *        Data Repository Interface
@@ -8,7 +8,7 @@ using Fallout.Models;
  * for each Enity Class such as Employeee. 
 ---------------------------------------------*/
 
-namespace Fallout.Repository
+namespace FalloutAPI.Repository
 {
     public interface IDataRepository<TEntity>
     {

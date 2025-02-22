@@ -3,7 +3,7 @@
 /*---------------------------------------
  *     Model for the Api Error Message
 ----------------------------------------*/
-namespace Fallout.Models
+namespace FalloutAPI.Models
 {
     public class ApiError
     {

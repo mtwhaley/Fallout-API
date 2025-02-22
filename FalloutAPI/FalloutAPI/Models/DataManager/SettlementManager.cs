@@ -1,8 +1,8 @@
 
 using System.Linq;
 using System.Collections.Generic;
-using Fallout.Repository;
-namespace Fallout.Models.DataManager
+using FalloutAPI.Repository;
+namespace FalloutAPI.Models.DataManager
 {
     public class SettlementManager : IDataRepository<Settlement>
     {

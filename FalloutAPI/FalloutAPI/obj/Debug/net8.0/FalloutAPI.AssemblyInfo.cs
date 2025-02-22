@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FalloutAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+73c1fe716b34ae1dac21f2427cdcfa8f754eb40d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b5e3f5db2b9d9fb83eeaa6ab36b1737ad3541ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("FalloutAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FalloutAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
